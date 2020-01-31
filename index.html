@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="stepBar"></div>
+	
+	<link rel="stylesheet" href="tinyStepBar.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="jQuery.tinyStepBar.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#stepBar').tinyStepBar({
+			step: 4,
+			stepComplete: 3,
+			stepPercentage: [0,25,50,100],
+			stepTitle: ['Work A', 'Work B', 'Work C', 'Work D']
+		});
+	});
+	</script>
+</body>
+</html>

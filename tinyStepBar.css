@@ -1,0 +1,70 @@
+/***
+ * Copyright (c) 2020
+ * Licensed under the MIT License.
+ *
+ * Author: César Latorre
+ * Version: 1.0
+ * Requires: jQuery 1.12.4+
+ * Web: https://github.com/ceslat/tinyStepBar
+ */
+.progress {
+	width: 100%;
+	text-align: center;
+}
+.progress .circle,
+.progress .bar {
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #d5d5da;
+}
+.progress .circle {
+	width: 50px; 
+	height: 50px;
+	border-radius: 50%;
+	
+}
+.progress .bar {
+	position: relative;
+	width: 80px;
+	height: 6px;
+	vertical-align: top;
+	margin-top: 22px;
+	border-left: none;
+	border-right: none;
+	border-radius: 0;
+}
+.progress .circle .label {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 50%;
+	margin-top: 4.5%;
+	color: #c3c3c3;
+	font-size: 1.2em;
+}
+.progress .circle .title {
+	font-size: 1em;
+	line-height: 40px;
+	text-align: center;
+}
+
+/* Done */
+.progress .bar.done,
+.progress .circle.done {
+	background: #eee;
+}
+.progress .circle.done .label {
+	color: #FFF;
+	background: #5cb85c;
+	box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+}
+/* Active */
+.progress .bar.active {
+	background: linear-gradient(to right, #EEE 40%, #FFF 60%);
+}
+.progress .circle.active .label {
+	color: #FFF;
+	background: #f7941d;
+	box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+}
